@@ -1,0 +1,24 @@
+Here’s a basic `requirements.txt` file for **Drawaria DivideDocuments**. This assumes the tool uses common libraries for document processing, such as `PyPDF2` for PDFs and `python-docx` for Word documents. Adjust it based on your specific implementation:
+
+```plaintext
+# requirements.txt
+
+# Core libraries
+PyPDF2==3.0.0          # For PDF document processing
+python-docx==0.8.11    # For DOCX document processing
+python-magic==0.4.27   # For file type detection
+pytest==7.4.0          # For testing (optional)
+
+# Additional utilities
+tqdm==4.66.1           # For progress bars (optional)
+```
+
+### Notes:
+- If you’re working with other file formats (e.g., `.txt`), no additional libraries are needed.
+- If you plan to add more advanced features (e.g., OCR for scanned PDFs), you might need libraries like `PyMuPDF` or `pytesseract`.
+- Make sure to update the versions as needed for compatibility.
+
+To install the dependencies, run:
+```bash
+pip install -r requirements.txt
+```
